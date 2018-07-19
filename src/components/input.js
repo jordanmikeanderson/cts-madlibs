@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Input = (description) => {
+const Input = (title, state, onChange, name) => {
   return (
     <div className="input">
-      <input type='text' placeholder= {description} />
-      <label>{description}</label>
+      <input placeholder= {title} name={title} value={state} onChange={onChange} />
+      <label>{title}</label>
     </div>
   )
 }
